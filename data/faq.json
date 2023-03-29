@@ -1,0 +1,35 @@
+{
+  "title": "FREQUENTLY ASKED",
+  "span": "QUESTIONS",
+  "list": [
+      {
+          "openDefault": true,
+          "question": "Where is my data stored?",
+          "answer": "Data is stored securely on Google Cloud servers in the United States"
+      },
+      {
+          "question": "Can I share my artwork with others?",
+          "answer": "Yes, you can download any artwork you create and share it via email, social media, etc."
+      },
+      {
+          "question": "How do I buy credit?",
+          "answer": "Go to https://scribbletoart/pricing page and select a plan for your need. You will be redirected to the Stripe payment page. Enter your credit card information and click on the Pay button. You will be redirected back to the ScribbleToArt.com website where you can start creating your artwork. If the credit is not updated, just wait a minute and refresh the page."
+      },
+      {
+          "question": "Is payment secure?",
+          "answer": "Yes, we use Stripe for payment. We do not store any of your credit card information."
+      },
+      {
+          "question": "How do I cancel my subscription?",
+          "answer": "To cancel your subscription, click on the Account button on the top right corner of the page. Then click on the Manage Subscription link. You will be redirected to a stripe billing page. Login using your email and then you will be able to cancel your subscription. You will be charged for the current month and your subscription will be cancelled at the end of the month."
+      },
+      {
+          "question": "If I cancel my subscription, will my credit go away?",
+          "answer": "No, your credit will not go away. You can use your remaining credit to create artwork even after your subscription is cancelled."
+      },
+      {
+          "question": "If I don't use all my credit in a month, will it  go away?",
+          "answer": "No, your credit will not go away. Your remaining credit are additive and will be added to your next month's credit."
+      }
+  ]
+}

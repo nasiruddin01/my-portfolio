@@ -1,0 +1,71 @@
+@import '_variables.scss';
+
+input[type='text'],
+input[type='number'],
+input[type='date'],
+input[type='password'],
+input[type='email'],
+select {
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.35rem;
+  box-shadow: none;
+  border: 1.5px solid rgba($color-secondary, 0.5);
+  font-weight: 400;
+  font-family: $font-primary;
+  font-size: 1rem;
+  color: $color-secondary;
+  background: transparent;
+  width: 100%;
+  margin-top: 0.5rem;
+
+  &:focus {
+    border: 1.5px solid rgba($color-secondary, 0.8);
+    outline: none;
+    box-shadow: inset 0 0 0 0.5px rgba($color-secondary, 0.8);
+  }
+
+  &::-webkit-input-placeholder {
+    color: rgba($color-secondary, 0.5);
+  }
+
+  &:disabled {
+    background: rgba($color-secondary, 0.1);
+  }
+}
+
+label {
+  font-size: 1rem;
+  color: $color-secondary;
+  font-weight: 500;
+}
+
+select,
+label {
+  @include responsive(phone) {
+    width: 90% !important;
+    margin: 0 auto;
+    display: flex;
+  }
+}
+
+textarea {
+  width: 100%;
+  height: 7.5rem;
+  padding: 1rem;
+  border-radius: 0.3125rem;
+  font-family: inherit;
+  font-size: 1rem;
+  border: 1.5px solid rgba($color-secondary, 0.5);
+
+  &:focus {
+    outline: none;
+    border: 1.5px solid rgba($color-secondary, 0.8);
+    box-shadow: inset 0 0 0 0.5px rgba($color-secondary, 0.8);
+
+  }
+
+  &::-webkit-input-placeholder {
+    color: rgba($color-secondary, 0.5);
+  }
+
+}

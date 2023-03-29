@@ -1,0 +1,67 @@
+[
+  {
+    "displayName": "Digital Art",
+    "text": "white background, flat drawing, digital art, digital painting, digital drawing, digital illustration",
+    "thumbnail": "/image/digital-art.jpg"
+  },
+  {
+    "displayName": "Hyper Realistic",
+    "text": "Hyper realistic, intricate, high detail, sharp focus, dramatic, photorealistic, 4k, ultra realistic",
+    "thumbnail": "/image/hyper-realistic.jpg"
+  },
+  {
+    "displayName": "Stuffed Animal",
+    "text": "cute kawaii Squishy plush toy, realistic texture, visible stitch line, soft smooth lighting, vibrant studio lighting, modular constructivism, physically based rendering, square image",
+    "thumbnail": "/image/stuffed-animal.jpg"
+  },
+  {
+    "displayName": "Needle Felted",
+    "text": "made from Felt fibers, a 3D render, trending on cgsociety, rendered in maya, rendered in cinema4d, made of yarn, square image",
+    "thumbnail": "/image/needle-felted.jpg"
+  },
+  {
+    "displayName": "3D Object",
+    "text": "soft smooth lighting, soft pastel colors, skottie young, 3d blender render, polycount, modular constructivism, pop surrealism, physically based rendering, square image",
+    "thumbnail": "/image/3d-object.jpg"
+  },
+  {
+    "displayName": "Retro Comic",
+    "text": "Retro comic style artwork, highly detailed , comic book cover, symmetrical, vibrant",
+    "thumbnail": "/image/retro-comic.jpg"
+  },
+  {
+    "displayName": "Studio Ghibly",
+    "text": "Studio Ghibly, Studio Ghibly inspired, Studio Ghibly style",
+    "thumbnail": "/image/studio-ghibly.jpg"
+  },
+  {
+    "displayName": "Cute Sticker",
+    "text": "Cute kawaii character sticker, white background, illustration minimalism, vector, pastel colors",
+    "thumbnail": "/image/cute-sticker.jpg"
+  },
+  {
+    "displayName": "Funko Pop",
+    "text": "Funko pop figurine, made of plastic, product studio shot, on a white background, diffused lighting, centered",
+    "thumbnail": "/image/funko-pop.jpg"
+  },
+  {
+    "displayName": "Anime Portrait",
+    "text": "smooth soft skin, big dreamy eyes, beautiful intricate colored hair, symmetrical, anime wide eyes, soft lighting, detailed face, by makoto shinkai, stanley artgerm lau, wlop, rossdraws, concept art, digital painting, looking into camera",
+    "thumbnail": "/image/anime-portrait.jpg"
+  },
+  {
+    "displayName": "Low Poly",
+    "text": "kawaii low poly, 3d isometric render, white background, ambient occlusion, unity engine, octane engine",
+    "thumbnail": "/image/low-poly.jpg"
+  },
+  {
+    "displayName": "Rendered Object",
+    "text": "cute isometric porcelain style, soft smooth lighting, with soft colors, 100mm lens, 3d blender render, trending on polycount, modular constructivism, blue background, physically based rendering, centered",
+    "thumbnail": "/image/rendered-object.jpg"
+  },
+  {
+    "displayName": "Block Object",
+    "text": "isometric style, soft smooth lighting, soft colors, soft colors, 100mm lens, 3d blender render, trending on polycount, modular constructivism, blue blackground, physically based rendering, centered",
+    "thumbnail": "/image/block-object.jpg"
+  }
+]
