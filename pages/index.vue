@@ -42,9 +42,9 @@
               Building Innovative Solutions for a Better Future
             </h1>
             <p class="font-page-paragraph">
-              Explore my software developer portfolio and see the range of
-              projects I have worked on. Contact me if you would like to discuss
-              collaborating on your next project.
+              Explore my portfolio and see the range of projects I have worked
+              on. Contact me if you would like to discuss collaborating on your
+              next project.
             </p>
           </div>
         </div>

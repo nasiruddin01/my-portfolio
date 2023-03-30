@@ -21,46 +21,44 @@
       </nav>
     </div>
     <div class="container">
+      <h2 class="header">Project Details</h2>
+      <div class="name">
+        <h3>{{ selectedProject.name }}</h3>
+        <a class="link" :href="selectedProject.link" target="_blank">See</a>
+      </div>
       <div class="visualizer">
         <div class="video-container">
           <div class="dark">
-            <h2>Project Details</h2>
-            <div class="name">
-              <h3>{{ selectedProject.name }}</h3>
-              <a class="link" :href="selectedProject.link" target="_blank"
-                >See</a
-              >
-            </div>
             <div class="img">
               <img :src="selectedProject.image" alt="project_image" />
             </div>
-            <div class="description">
-              <h4>Description:</h4>
-              <p>
-                {{ selectedProject.description }}
-              </p>
-            </div>
-            <div class="description">
-              <h4>Responsiblities:</h4>
-              <ul v-for="feature in selectedProject.features" :key="feature">
-                <li>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 448 512"
-                    width="18"
-                    fill="#e49620"
-                  >
-                    <path
-                      d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
-                    />
-                  </svg>
-                  &nbsp;
-                  {{ feature }}
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
+      </div>
+      <div class="description">
+        <h4>Description:</h4>
+        <p>
+          {{ selectedProject.description }}
+        </p>
+      </div>
+      <div class="description">
+        <h4>Responsiblities:</h4>
+        <ul v-for="feature in selectedProject.features" :key="feature">
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              width="18"
+              fill="#e49620"
+            >
+              <path
+                d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+              />
+            </svg>
+            &nbsp;
+            {{ feature }}
+          </li>
+        </ul>
       </div>
     </div>
   </div>
@@ -180,10 +178,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+:root {
+  --primary-color: #10723e;
+  --secondary-color: #235952;
+  --dark-color: #001008;
+  --ligth-color: #ddeff5;
+}
 .bg {
   min-height: 100vh;
   width: 100vw;
-  background-color: #ddeff5;
+  background-color: #001008;
 }
 .header-section {
   max-width: 100vw !important;
@@ -211,15 +215,18 @@ export default {
         ul {
           display: flex;
           justify-content: flex-end;
+          color: #ddeff5;
 
           li {
             margin-left: 2.2rem;
+            color: #ddeff5;
 
             // font-family: 'Montserrat Alternates', sans-serif;
           }
           a {
             font-size: 1.2rem;
             transition: all 0.3s ease-in-out;
+            color: #ddeff5;
           }
           a:hover {
             color: var(--dark-color);
@@ -234,6 +241,28 @@ export default {
   width: 100%;
   margin: 0 auto;
   color: #fff;
+  .header {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 1rem;
+    color: #001008;
+  }
+  .name {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    color: #ddeff5;
+
+    .link {
+      padding: 5px 10px;
+      border-radius: 5px;
+      background: #ddeff5;
+      color: #001008;
+    }
+  }
   .visualizer {
     margin-top: 4rem;
     margin-bottom: 2rem;
@@ -260,49 +289,11 @@ export default {
       animation: animatedgradient 5s ease alternate infinite;
       background-size: 300% 300%;
       .dark {
-        background: #000;
-        h2 {
-          text-align: center;
-          padding-top: 1rem;
-        }
-        .name {
-          width: 95%;
-          margin: 0 auto;
-          display: flex;
-          justify-content: space-between;
-          margin-top: 1rem;
-          .link {
-            padding: 5px 10px;
-            border-radius: 5px;
-            background: #ddeff5;
-            color: #000;
-          }
-        }
         .img {
           width: 100%;
-          margin-top: 1rem;
           img {
             width: 100%;
             margin: 0 auto;
-          }
-        }
-        .description {
-          padding: 1rem;
-          h4 {
-            font-size: 20px;
-            text-decoration: underline;
-          }
-          p {
-            margin-top: 0.5rem;
-            line-height: 1.25rem;
-          }
-          ul {
-            li {
-              display: flex;
-              align-content: center;
-              padding: 5px 0;
-              font-family: 'Nunito', sans-serif !important;
-            }
           }
         }
       }
@@ -330,10 +321,30 @@ export default {
       filter: blur(20px);
     }
   }
+  .description {
+    color: #ddeff5;
+    padding: 1rem 1rem 3rem 1rem;
+    h4 {
+      font-size: 20px;
+      text-decoration: underline;
+    }
+    p {
+      margin-top: 0.5rem;
+      line-height: 1.25rem;
+    }
+    ul {
+      li {
+        display: flex;
+        align-content: center;
+        padding: 5px 0;
+        font-family: 'Nunito', sans-serif !important;
+      }
+    }
+  }
 
   a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: #001008;
   }
 
   .nav-container {
