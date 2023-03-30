@@ -24,7 +24,7 @@
       <h2 class="header">Project Details</h2>
       <div class="name">
         <h3>{{ selectedProject.name }}</h3>
-        <a class="link" :href="selectedProject.link" target="_blank">See</a>
+        <a class="link" :href="selectedProject.link" target="_blank">Live here</a>
       </div>
       <div class="visualizer">
         <div class="video-container">
