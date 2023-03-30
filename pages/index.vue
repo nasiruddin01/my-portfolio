@@ -12,13 +12,19 @@
             <div class="link-bar">
               <ul>
                 <li>
-                  <a href="#about">About</a>
+                  <a href="#about" @click="scrollToSection('#section1')"
+                    >About</a
+                  >
                 </li>
                 <li>
-                  <a href="#skills">Skills</a>
+                  <a href="#skills" @click="scrollToSection('#section2')"
+                    >Skills</a
+                  >
                 </li>
                 <li>
-                  <a href="#work">Projects</a>
+                  <a href="#work" @click="scrollToSection('#section3')"
+                    >Projects</a
+                  >
                 </li>
               </ul>
             </div>
@@ -27,7 +33,7 @@
       </nav>
 
       <!-- SHOWCASE -->
-      <section id="showcase">
+      <section id="showcase" ref="section1">
         <div class="container">
           <img class="top-cloud" src="image/cloud1.png" alt="cloud-image" />
           <img class="bottom-cloud" src="image/cloud1.png" alt="cloud-image" />
@@ -61,7 +67,7 @@
     </header>
 
     <!-- ABOUT SECTION -->
-    <section id="about">
+    <section id="about" ref="section1">
       <div class="container">
         <div class="about-content">
           <img
@@ -91,7 +97,7 @@
     </section>
 
     <!-- SKILLS SECTION -->
-    <section id="skills">
+    <section id="skills" ref="section2">
       <div class="container">
         <div class="skills-section">
           <h1 class="skills-header">My Skills</h1>
@@ -116,7 +122,7 @@
     </section>
 
     <!-- Project section -->
-    <section id="work" class="text-center py-3">
+    <section id="work" ref="section3" class="text-center py-3">
       <div class="container">
         <h2 class="section-title">My Works</h2>
         <p class="lead">Some of my projects.</p>
@@ -159,7 +165,7 @@
     <!--FOTTER SECTION-->
     <footer id="main-footer">
       <div class="container">
-        <div class="social-link">
+        <div class="social-link" @click="scrollToTop">
           <a target="_blank" href="https://twitter.com/nasir_uddin01"
             ><svg
               height="25px"
@@ -312,7 +318,7 @@ export default {
         },
         {
           id: 'appolo',
-          name: 'Inkrement',
+          name: 'Apollo HMS',
           description:
             'As a software developer, I have had the opportunity to work on various projects that have helped me develop my skills in different areas. One of my most notable projects is Apollo HMS, a hospital management software designed to simplify the operations of healthcare facilities.',
           features: [
@@ -395,6 +401,23 @@ export default {
   methods: {
     selectedProject(id) {
       this.$router.push('/project/' + id)
+    },
+    scrollToSection(hash) {
+      if (hash !== '') {
+        event.preventDefault()
+        const section = this.$refs[hash.slice(1)]
+        const scrollTop = section.offsetTop
+        window.scrollTo({
+          top: scrollTop,
+          behavior: 'smooth',
+        })
+      }
+    },
+    scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      })
     },
   },
 }
