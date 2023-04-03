@@ -38,9 +38,7 @@
           <img class="top-cloud" src="image/cloud1.png" alt="cloud-image" />
           <img class="bottom-cloud" src="image/cloud1.png" alt="cloud-image" />
           <div class="showcse-content">
-            <h1 class="font-page-title">
-              Building Innovative Solutions for a Better Future
-            </h1>
+            <h1 class="font-page-title">Nasir Uddin</h1>
             <p class="font-page-paragraph">
               Explore my portfolio and see the range of projects I have worked
               on. Contact me if you would like to discuss collaborating on your
