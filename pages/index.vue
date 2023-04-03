@@ -152,7 +152,7 @@
                       class=""
                     ></path>
                   </svg>
-                  Vist
+                  Visit
                 </button>
               </div>
             </div>
@@ -763,7 +763,17 @@ h4 {
   position: relative;
   overflow: hidden;
   background-color: #000;
-  border: 2px solid #f04a68;
+  border-image: linear-gradient(
+      135deg,
+      #ff0000,
+      #e4205d,
+      #4a3ece,
+      #f100f1,
+      #1000ee,
+      #b10000
+    )
+    1;
+
   border-radius: 3px;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
 }
