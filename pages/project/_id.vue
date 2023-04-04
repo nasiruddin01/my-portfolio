@@ -24,7 +24,9 @@
       <h2 class="header">Project Details</h2>
       <div class="name">
         <h3>{{ selectedProject.name }}</h3>
-        <a class="link" :href="selectedProject.link" target="_blank">Live here</a>
+        <a class="link" :href="selectedProject.link" target="_blank"
+          >Live here</a
+        >
       </div>
       <div class="visualizer">
         <div class="video-container">
@@ -90,7 +92,7 @@ export default {
         },
         {
           id: 'appolo',
-          name: 'Inkrement',
+          name: 'Appolo HMS',
           description:
             'As a software developer, I have had the opportunity to work on various projects that have helped me develop my skills in different areas. One of my most notable projects is Apollo HMS, a hospital management software designed to simplify the operations of healthcare facilities.',
           features: [
@@ -178,16 +180,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,100&family=Sacramento&display=swap');
 :root {
   --primary-color: #10723e;
   --secondary-color: #235952;
   --dark-color: #001008;
   --ligth-color: #ddeff5;
 }
+$font-primary: 'Montserrat', sans-serif;
+$font-secondary: 'Roboto', sans-serif;
+$font-tertiary: 'Sacramento', cursive;
 .bg {
   min-height: 100vh;
   width: 100vw;
-  background-color: #001008;
+  background-color: var(--ligth-color);
 }
 .header-section {
   max-width: 100vw !important;
@@ -215,18 +221,18 @@ export default {
         ul {
           display: flex;
           justify-content: flex-end;
-          color: #ddeff5;
 
           li {
             margin-left: 2.2rem;
-            color: #ddeff5;
+            // color: #ddeff5;
 
             // font-family: 'Montserrat Alternates', sans-serif;
           }
           a {
             font-size: 1.2rem;
             transition: all 0.3s ease-in-out;
-            color: #ddeff5;
+            color: var(--dark-color);
+            font-family: $font-secondary;
           }
           a:hover {
             color: var(--dark-color);
@@ -240,7 +246,7 @@ export default {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  color: #fff;
+  color: var(--dark-color);
   .header {
     text-align: center;
     font-size: 30px;
@@ -254,13 +260,29 @@ export default {
     display: flex;
     justify-content: space-between;
     margin-top: 1rem;
-    color: #ddeff5;
+    color: var(--dark-color);
+    font-family: $font-primary;
 
     .link {
       padding: 5px 10px;
       border-radius: 5px;
-      background: #ddeff5;
-      color: #001008;
+      color: #fff;
+      font-family: $font-primary;
+      font-weight: 700;
+      background: linear-gradient(
+        135deg,
+        #ff0000,
+        #e4205d,
+        #4a3ece,
+        #f100f1,
+        #1000ee,
+        #b10000
+      );
+      animation: animatedgradient 5s ease alternate infinite;
+      background-size: 300% 300%;
+    }
+    .link:hover {
+      cursor: pointer;
     }
   }
   .visualizer {
@@ -272,7 +294,7 @@ export default {
     padding: 1rem;
 
     .video-container {
-      width: 1000px;
+      width: 100%;
       position: relative;
       padding: 1rem;
       border-radius: 10px;
@@ -322,14 +344,16 @@ export default {
     }
   }
   .description {
-    color: #ddeff5;
-    padding: 1rem 1rem 3rem 1rem;
+    color: var(--dark-color);
+    padding: 1rem;
     h4 {
       font-size: 20px;
       text-decoration: underline;
+      font-family: $font-primary;
     }
     p {
       margin-top: 0.5rem;
+      font-family: $font-secondary;
       line-height: 1.25rem;
     }
     ul {
@@ -337,14 +361,14 @@ export default {
         display: flex;
         align-content: center;
         padding: 5px 0;
-        font-family: 'Nunito', sans-serif !important;
+        font-family: $font-primary !important;
       }
     }
   }
 
   a {
     text-decoration: none;
-    color: #001008;
+    color: var(--dark-color);
   }
 
   .nav-container {

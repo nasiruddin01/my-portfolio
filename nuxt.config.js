@@ -35,7 +35,7 @@ export default {
     '@nuxtjs/google-fonts',
   ],
 
-  modules: ['@nuxtjs/axios'],
+  modules: [],
 
   axios: {},
 

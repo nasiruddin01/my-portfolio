@@ -422,13 +422,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,100&family=Sacramento&display=swap');
 :root {
   --primary-color: #10723e;
   --secondary-color: #235952;
   --dark-color: #001008;
   --ligth-color: #ddeff5;
 }
-
+$font-primary: 'Montserrat', sans-serif;
+$font-secondary: 'Roboto', sans-serif;
+$font-tertiary: 'Sacramento', cursive;
 * {
   margin: 0;
   padding: 0;
@@ -448,11 +451,11 @@ h5,
 h6,
 li,
 a {
-  font-family: 'Poppins', sans-serif;
+  font-family: $font-secondary;
 }
 
 p {
-  font-family: 'Nunito', sans-serif;
+  font-family: $font-primary;
   font-size: 18px;
 }
 
@@ -555,8 +558,9 @@ a {
 }
 
 #showcase .showcse-content h1 {
-  // font-family: 'Sacramento', cursive;
+  font-family: 'Sacramento', cursive !important;
   font-size: 3rem;
+  font-weight: 800;
   width: 80%;
   margin: auto;
   background: linear-gradient(
@@ -577,7 +581,7 @@ a {
   margin: auto;
 
   font-size: 1rem;
-  font-family: 'Josefin Sans', sans-serif;
+  // font-family: 'Josefin Sans', sans-serif;
   color: var(--primary-color);
   margin-bottom: 5.5rem;
 }
