@@ -28,6 +28,12 @@
           >Live here</a
         >
       </div>
+      <div class="description">
+        <h4>Description:</h4>
+        <p>
+          {{ selectedProject.description }}
+        </p>
+      </div>
       <div class="visualizer">
         <div class="video-container">
           <div class="dark">
@@ -37,12 +43,7 @@
           </div>
         </div>
       </div>
-      <div class="description">
-        <h4>Description:</h4>
-        <p>
-          {{ selectedProject.description }}
-        </p>
-      </div>
+
       <div class="description">
         <h4>Responsiblities:</h4>
         <ul v-for="feature in selectedProject.features" :key="feature">
