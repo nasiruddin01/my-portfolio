@@ -1,7 +1,7 @@
 {
-  "name": "scribble-to-art",
-  "description": "Converts your scribbles into art.",
-  "author": "CONNEKT STUDIO",
+  "name": "Nasher Uddin",
+  "description": "A portfolio site of Nasher Uddin",
+  "author": "NASHER UDDIN",
   "version": "1.0.0",
   "private": true,
   "scripts": {
