@@ -14,8 +14,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content:
-          'Transform your scribbles and strokes into stunning works of art with Scribble to Art. Doodle anything, select a style, and add prompts to create art that reflects your unique vision.',
+        content: '',
       },
 
       { name: 'format-detection', content: 'telephone=no' },
@@ -34,6 +33,9 @@ export default {
     '@nuxtjs/eslint-module',
     '@nuxtjs/google-fonts',
   ],
+  generate: {
+    fallback: true,
+  },
 
   modules: [],
 
