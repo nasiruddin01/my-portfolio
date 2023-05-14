@@ -70,7 +70,7 @@
         <div class="about-content">
           <img
             class="profile-image"
-            src="/static/image/programmer-1.png"
+            src="~/static/image/programmer-1.png"
             alt="profile-image"
           />
           <div class="about-me">
